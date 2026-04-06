@@ -1,0 +1,35 @@
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Database files
+*.db
+*.sqlite3
+
+# Data files
+**/data/raw/*
+**/data/cleaned/*
+
+# Output files
+**/outputs/*
+
+# Keep folder structure but ignore contents
+!**/data/raw/.gitkeep
+!**/data/cleaned/.gitkeep
+!**/outputs/.gitkeep
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
