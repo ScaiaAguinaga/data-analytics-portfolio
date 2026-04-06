@@ -25,6 +25,9 @@ __pycache__/
 **/outputs/*
 
 # Keep folder structure but ignore contents
+!**/data/raw/
+!**/data/cleaned/
+!**/outputs/
 !**/data/raw/.gitkeep
 !**/data/cleaned/.gitkeep
 !**/outputs/.gitkeep
