@@ -1,20 +1,16 @@
 import pandas as pd
 
-df = pd.read_csv("data/raw/netflix_titles.csv")
+file_path = "data/raw/netflix_titles.csv"
+df = pd.read_csv(file_path)
 
-# print("\nFIRST 5 ROWS:")
-# print(df.head())
-
-print("\nINFO:")
+print("\nDATAFRAME INFO:")
 print(df.info())
 
-print("\nMISSING VALUES:")
-print(df.isnull().sum())
+print("\nMISSING DATA:")
+print(df.isna().sum())
 
-print("\nDUPLICATES:")
-print(df.duplicated().sum())
+invalid_ratings = df[df["rating"].str.contains("min", na=False)]
 
-print("NULL Directors:")
-print(df['director'].isnull().sum())
+print(invalid_ratings["rating"])
 
-print(df['date_added'].value_counts().to_string())
+print(invalid_ratings["rating"].count())
