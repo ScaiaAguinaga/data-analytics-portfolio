@@ -29,9 +29,9 @@ No modifications should be made to files in this directory.
 	- Trend discovery (Has Netflix been adding more/less of a specific genre as time goes on)
 
 ## Cleaning Needed
-	- Fill missing directors and casts with "Unknown".
-	- Handle missing "country" values.
-	- Ignore minor missing values as they do not have a realized impact on analysis outcomes.
+	- Fill missing directors and casts with "Unknown"
+	- Handle missing country values
+	- Ignore minor missing values as they do not have a realized impact on analysis outcomes
 	- Handle duration values in rating column
-	- convert date added to be in a standardized and usable format for arithmetic.
-	- Add 'grace_period' column to determine how long a show/movie was released before being added to the Netflix catalog.
+	- convert date added to be in a standardized and usable format for arithmetic
+	- Add 'grace_period' column to determine how long a show/movie was released before being added to the Netflix catalog
